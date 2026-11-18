@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Class Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Contact</h1>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="notes.html">Notes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <h2>Send a message</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="phone">Phone number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    pattern="[0-9()+.\s-]{7,20}"
+                    title="Enter 7 to 20 characters using numbers, spaces, or + ( ) . -"
+                    required
+                >
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Class Notes</p>
+        </div>
+    </footer>
+</body>
+</html>
